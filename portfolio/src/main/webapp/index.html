@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Chenqian</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Chenqian</h2>
+            <p class="hero_desc">I am a software developer</p>
+        </div>
+        </div>
     </div>
-  </body>
+</section>
+
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> I'm passionate about programming and doing projects, especially when this project is 
+                      meaningful and can help others. I enjoy working with teams, communicating and organizing. I've collaborated with 
+                      my friends to gain 5th place out of 20 teams in one hackathon. I love challenges and 
+                      learning new things. The sense of accomplishment after conquering challenges and 
+                      knowing new techniques makes me look forward to the next challenge and new 
+                      things.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Chenqian Jing</li>
+                                <li>Age: 22</li>
+                                <li>Occupation: CS student at UBC</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+</body>
 </html>
+
