@@ -15,3 +15,12 @@
 /**
  * Adds a random greeting to the page.
  */
+async function getServerStats() {
+    const responseFromServer = await fetch("/interests");
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const inJFile = await responseFromServer.json();
+    const statsListElement = document.getElementById('server-interests-container');
+    statsListElement.innerHTML = inJFile;// can I return a string json file here?
+  
+  }
