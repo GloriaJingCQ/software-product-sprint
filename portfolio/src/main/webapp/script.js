@@ -13,7 +13,7 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds interests to the portfolio page.
  */
  async function getServerStats() {
     const responseFromServer = await fetch("/interests");
