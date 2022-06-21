@@ -13,5 +13,14 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds interests to the portfolio page.
  */
+async function getServerInterest() {
+    const responseFromServer = await fetch("/interests");
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const inJFile = await responseFromServer.json();
+    const interestListElement = document.getElementById('server-interests-container');
+    interestListElement.innerHTML = inJFile;// can I return a string json file here?
+  
+  }
